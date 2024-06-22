@@ -1,0 +1,9 @@
+%WINDIR%\system32\reg.exe add "HKCU\Software\Daum\PotPlayerMini64\Settings" /v "OnTopMode" /t REG_DWORD /d "2" /f
+%WINDIR%\system32\reg.exe add "HKCU\Software\Daum\PotPlayerMini64\Settings" /v "ChatAttachToMain2" /t REG_DWORD /d "0" /f
+%WINDIR%\system32\reg.exe add "HKCU\Software\Daum\PotPlayerMini64\Settings" /v "BroadcastAttachToMain2" /t REG_DWORD /d "0" /f
+%WINDIR%\system32\reg.exe add "HKCU\Software\Daum\PotPlayerMini64\Settings" /v "MouseLeftSClick" /t REG_DWORD /d "4" /f
+%WINDIR%\system32\reg.exe add "HKCU\Software\Daum\PotPlayerMini64\Settings" /v "MouseLeftDClick" /t REG_DWORD /d "1" /f
+%WINDIR%\system32\reg.exe add "HKCU\Software\Daum\PotPlayerMini64\Settings" /v "AttachWindowIndex" /t REG_DWORD /d "2" /f
+%WINDIR%\system32\reg.exe add "HKCU\Software\Daum\PotPlayerMini64\Settings" /v "UseSideWindow" /t REG_DWORD /d "0" /f
+%WINDIR%\system32\reg.exe add "HKCU\Software\Daum\PotPlayerMini64\Settings" /v "CheckAutoUpdate" /t REG_DWORD /d "0" /f
+%WINDIR%\system32\reg.exe add "HKCU\Software\Daum\PotPlayerMini64\Settings" /v "AutoDownloadFile" /t REG_DWORD /d "0" /f

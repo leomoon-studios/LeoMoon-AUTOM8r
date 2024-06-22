@@ -1,0 +1,1 @@
+%COMSPEC% /c bcdedit /set hypervisorlaunchtype off

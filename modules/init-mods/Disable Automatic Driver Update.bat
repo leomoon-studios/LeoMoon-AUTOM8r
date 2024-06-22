@@ -1,0 +1,1 @@
+%WINDIR%\system32\reg.exe add "HKLM\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate" /v "ExcludeWUDriversInQualityUpdate" /t  REG_DWORD /d "1" /f

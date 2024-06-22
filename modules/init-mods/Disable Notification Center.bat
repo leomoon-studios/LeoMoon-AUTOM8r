@@ -1,0 +1,2 @@
+%WINDIR%\system32\reg.exe add "HKCU\SOFTWARE\Policies\Microsoft\Windows\Explorer" /v "DisableNotificationCenter" /t  REG_DWORD /d "1" /f
+%WINDIR%\system32\reg.exe add "HKLM\SOFTWARE\Policies\Microsoft\Windows\Explorer" /v "DisableNotificationCenter" /t  REG_DWORD /d "1" /f

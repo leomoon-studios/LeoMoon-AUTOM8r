@@ -1,0 +1,22 @@
+# custom
+_LAST-UPDATED_*
+.vscode/
+.history/
+_gsdata_/
+
+bin/
+**.exe
+**.msi
+**.msp
+**.dll
+**.ttf
+**.otf
+**.vbox*
+**.key
+**.icm
+**.reg
+**.iso
+**.zip
+
+# include binaries in tools folder
+!modules/tools/**

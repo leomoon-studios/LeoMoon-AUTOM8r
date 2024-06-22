@@ -1,0 +1,2 @@
+%WINDIR%\system32\reg.exe add "HKCU:\Software\Policies\Microsoft\Windows\Explorer" /v "DisableThumbsDBOnNetworkFolders" /t  REG_DWORD /d "1" /f
+%WINDIR%\system32\reg.exe add "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /v "DisableThumbnailCache" /t  REG_DWORD /d "1" /f

@@ -1,0 +1,2 @@
+%WINDIR%\system32\reg.exe add "HKCU\Software\Microsoft\Windows\CurrentVersion\Search" /v "SearchboxTaskbarMode" /t  REG_DWORD /d "0" /f
+%WINDIR%\system32\reg.exe add "HKLM\SOFTWARE\Policies\Microsoft\Windows\Windows Search" /v "AllowCortana" /t  REG_DWORD /d "0" /f

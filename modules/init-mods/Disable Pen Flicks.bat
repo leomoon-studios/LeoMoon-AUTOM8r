@@ -1,0 +1,2 @@
+%WINDIR%\system32\reg.exe add "HKCU\Software\Microsoft\Wisp\Pen\SysEventParameters" /v "FlickMode" /t REG_DWORD /d "0" /f
+%WINDIR%\system32\reg.exe add "HKCU\Software\Microsoft\Wisp\Pen\SysEventParameters" /v "HoldMode" /t REG_DWORD /d "3" /f

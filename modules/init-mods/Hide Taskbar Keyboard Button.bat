@@ -1,0 +1,1 @@
+%WINDIR%\system32\reg.exe add "HKCU\SOFTWARE\Microsoft\TabletTip\1.7" /v "TipbandDesiredVisibility" /t  REG_DWORD /d "0" /f

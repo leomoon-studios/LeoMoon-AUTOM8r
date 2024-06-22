@@ -1,0 +1,1 @@
+%WINDIR%\system32\reg.exe add "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\ImmersiveShell" /v "TabletMode" /t  REG_DWORD /d "0" /f

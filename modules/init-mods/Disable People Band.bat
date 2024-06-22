@@ -1,0 +1,1 @@
+%WINDIR%\system32\reg.exe add "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced\People" /v "PeopleBand" /t  REG_DWORD /d "0" /f
