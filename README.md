@@ -152,6 +152,62 @@ These are the current scripts bundled with AUTOM8r. Users can extend it and add 
 - Fix Icon Spacing.bat
 - Configure PowerCFG.bat
 
+#### List of Supported Applications
+
+While this is the current list of supported applications that AUTOM8r can install silently, you can add your own application with silent swtich to the INI.
+
+- 1password
+- 7zip
+- adobe-after-effects
+- adobe-lightroom-classic
+- adobe-media-encoder
+- adobe-photoshop
+- audacity
+- autoit
+- blender
+- chrome
+- cura
+- docker
+- dropbox
+- everything
+- exodus
+- fastpictureviewer
+- filezilla
+- firefox
+- gimp
+- git
+- inkscape
+- inno
+- jre
+- krita
+- libreoffice
+- lockhunter
+- mediainfo
+- microsoft-office-2021
+- npp
+- obs
+- ojdk
+- openhashtab
+- openshell
+- openvpn
+- parsinegar
+- pcloud
+- persian-keyboard
+- potplayer
+- python
+- qview
+- steam
+- sumatrapdf
+- telegram
+- virtualbox
+- visual-cpp
+- vlc
+- vmwarews
+- vnc
+- vsbuildtools
+- vscode
+- winrar
+
 #### List of Post Application Scripts
 
 - gitPost.bat
