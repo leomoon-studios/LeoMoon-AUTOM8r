@@ -11,11 +11,11 @@
 #pragma compile(Comments, This program is freeware.)
 #pragma compile(ProductName, LeoMoon AUTOM8r)
 #pragma compile(FileDescription, LeoMoon AUTOM8r)
-#pragma compile(FileVersion, 2.2.1.0)
+#pragma compile(FileVersion, 2.2.2.0)
 #pragma compile(LegalCopyright, Amin Babaeipanah)
 #pragma compile(CompanyName, LeoMoon Studios)
 #pragma compile(LegalTrademarks, LeoMoon Studios)
-#pragma compile(ProductVersion, 2.2.1)
+#pragma compile(ProductVersion, 2.2.2)
 
 #include <File.au3> ;search n replace
 #include <AutoItConstants.au3> ;mapping drives
@@ -33,17 +33,7 @@ RegWrite('HKLM\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters', 
 ;disable uac
 RegWrite('HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System', 'ConsentPromptBehaviorAdmin', 'REG_DWORD', '0')
 RegWrite('HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System', 'EnableLUA', 'REG_DWORD', '0')
-
-; check for command line arguments
-Global $silentMode = False
-For $i = 1 To $CmdLine[0]
-    Switch StringLower($CmdLine[$i])
-        Case "-q"
-            $silentMode = True
-    EndSwitch
-Next
-
-; variables
+;variables
 Global $title = 'LeoMoon AUTOM8r'
 Global $files_dir = 'modules'
 Global $setup_path = @ScriptDir&'\'&$files_dir
@@ -91,7 +81,7 @@ $ret = DllCall("WinInet.dll","int","InternetGetConnectedState","int_ptr",0,"int"
 If $ret[0] Then $net = True
 
 ; ask user first
-If $debug == 0 And Not $silentMode Then
+If $debug == 0 Then
     $t = MsgBox (4, $title ,'Do you want to AUTOM8 this computer?')
     If $t = 7 Then
         Exit
@@ -399,8 +389,9 @@ Func _installAppsSection($section)
                 Local $postfile = $appName & 'Post.bat'
                 Local $displayname = IniRead($ini_file, $appName, "display-name", "")
                 Local $partialsearch = IniRead($ini_file, $appName, "partial-search", "")
-                Local $param = StringReplace(IniRead($ini_file, $appName, "silent-switches", ""), '|EQUAL|', '=')
-                $param = StringReplace($param, '|COMMA|', ',')
+                ;~ Local $param = StringReplace(IniRead($ini_file, $appName, "silent-switches", ""), '|EQUAL|', '=')
+                ;~ $param = StringReplace($param, '|COMMA|', ',')
+                Local $param = IniRead($ini_file, $appName, "silent-switches", "")
                 Local $driver = IniRead($ini_file, $appName, "driver-install", "")
                 Local $winwait = IniRead($ini_file, $appName, "win-wait", "")
                 Local $controlid = IniRead($ini_file, $appName, "click-element", "")
